@@ -1,0 +1,9 @@
+C:\Users\Test\Desktop\Project\listbluetoothdevice\listbluetoothdevice\bin\Debug\listbluetoothdevice.exe.config
+C:\Users\Test\Desktop\Project\listbluetoothdevice\listbluetoothdevice\bin\Debug\listbluetoothdevice.exe
+C:\Users\Test\Desktop\Project\listbluetoothdevice\listbluetoothdevice\bin\Debug\listbluetoothdevice.pdb
+C:\Users\Test\Desktop\Project\listbluetoothdevice\listbluetoothdevice\bin\Debug\InTheHand.Net.Personal.dll
+C:\Users\Test\Desktop\Project\listbluetoothdevice\listbluetoothdevice\bin\Debug\InTheHand.Net.Personal.xml
+C:\Users\Test\Desktop\Project\listbluetoothdevice\listbluetoothdevice\obj\Debug\listbluetoothdevice.csprojResolveAssemblyReference.cache
+C:\Users\Test\Desktop\Project\listbluetoothdevice\listbluetoothdevice\obj\Debug\listbluetoothdevice.csproj.CoreCompileInputs.cache
+C:\Users\Test\Desktop\Project\listbluetoothdevice\listbluetoothdevice\obj\Debug\listbluetoothdevice.exe
+C:\Users\Test\Desktop\Project\listbluetoothdevice\listbluetoothdevice\obj\Debug\listbluetoothdevice.pdb
