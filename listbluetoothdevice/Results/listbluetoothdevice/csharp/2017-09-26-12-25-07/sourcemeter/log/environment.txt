@@ -1,0 +1,45 @@
+=::=::\
+=C:=C:\Users\ekstr\Dropbox\Personal\OpenSource\BluetoothLogin_Exit\listbluetoothdevice
+=ExitCode=00000003
+ALLUSERSPROFILE=C:\ProgramData
+APPDATA=C:\Users\ekstr\AppData\Roaming
+COLUMBUS_LICENSE_FILE=C:/Users\ekstr\Dropbox\Personal\OpenSource\BluetoothLogin_Exit\LICENSE.DAT
+CommonProgramFiles=C:\Program Files\Common Files
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+CommonProgramW6432=C:\Program Files\Common Files
+COMPUTERNAME=EKSTRAH
+ComSpec=C:\WINDOWS\system32\cmd.exe
+FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+FPS_BROWSER_USER_PROFILE_STRING=Default
+FSHARPINSTALLDIR=C:\Program Files (x86)\Microsoft SDKs\F#\4.1\Framework\v4.0\
+HOMEDRIVE=C:
+HOMEPATH=\Users\ekstr
+LOCALAPPDATA=C:\Users\ekstr\AppData\Local
+LOGONSERVER=\\EKSTRAH
+MSMPI_BIN=C:\Program Files\Microsoft MPI\Bin\
+NUMBER_OF_PROCESSORS=4
+OneDrive=C:\Users\ekstr\OneDrive
+OS=Windows_NT
+Path=C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Users\ekstr\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\ekstr\AppData\Local\Programs\Python\Python36-32\;C:\Users\ekstr\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PROCESSOR_ARCHITECTURE=AMD64
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+PROCESSOR_LEVEL=6
+PROCESSOR_REVISION=2a07
+ProgramData=C:\ProgramData
+ProgramFiles=C:\Program Files
+ProgramFiles(x86)=C:\Program Files (x86)
+ProgramW6432=C:\Program Files
+PROMPT=$P$G
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC=C:\Users\Public
+SESSIONNAME=Console
+SystemDrive=C:
+SystemRoot=C:\WINDOWS
+TEMP=C:\Users\ekstr\AppData\Local\Temp
+TMP=C:\Users\ekstr\AppData\Local\Temp
+USERDOMAIN=EKSTRAH
+USERDOMAIN_ROAMINGPROFILE=EKSTRAH
+USERNAME=ekstr
+USERPROFILE=C:\Users\ekstr
+windir=C:\WINDOWS

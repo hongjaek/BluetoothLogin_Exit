@@ -249,7 +249,7 @@ namespace AutoBlue.ProcessExtensions
                     throw new Exception("StartProcessAsCurrentUser: CreateProcessAsUser failed.  Error Code -" + iResultOfCreateProcessAsUser);
                 }
 
-                iResultOfCreateProcessAsUser = Marshal.GetLastWin32Error();
+                iResultOfCreateProcessAsUser = Marshal.GetLastWin32Error(); //This variable is not used please do check again
             }
             finally
             {

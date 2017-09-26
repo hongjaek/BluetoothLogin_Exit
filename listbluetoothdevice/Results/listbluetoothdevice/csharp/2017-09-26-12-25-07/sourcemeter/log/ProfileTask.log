@@ -1,0 +1,3 @@
+[2017-09-26 12:25:07] Start:ProfileTask
+EXCEPTION:RulHandler::parseXML:unable to open primary document entity 'C:\Users\ekstr\Dropbox\Personal\OpenSource\BluetoothLogin_Exit\listbluetoothdevice\Results\listbluetoothdevice\csharp\2017-09-26-12-25-07\sourcemeter\temp\FxCop.rul'
+[2017-09-26 12:25:07] End:ProfileTask Result:critical error 

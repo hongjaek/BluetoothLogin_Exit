@@ -17,7 +17,7 @@ using System.IO;
 namespace autobluetoothservice
 {
 
-    public partial class CheckBTD : ServiceBase
+    public partial class CheckBTD : ServiceBase //Not all iDisposable members are properly disposed. Call Dispose when disposing CheckBTD
     {
         private Timer timer = null;
         private string[] str = null;

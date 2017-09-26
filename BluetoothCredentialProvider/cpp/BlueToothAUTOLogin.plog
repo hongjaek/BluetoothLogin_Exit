@@ -1,0 +1,1098 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Solution_Path">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="SolutionPath" type="xs:string" minOccurs="0" />
+                <xs:element name="SolutionVersion" type="xs:string" minOccurs="0" />
+                <xs:element name="PlogVersion" type="xs:unsignedInt" minOccurs="0" />
+                <xs:element name="ModificationDate" msdata:DateTimeMode="Utc" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="PVS-Studio_Analysis_Log">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="FavIcon" type="xs:boolean" minOccurs="0" msdata:Ordinal="0" />
+                <xs:element name="Level" type="xs:unsignedInt" minOccurs="0" msdata:Ordinal="1" />
+                <xs:element name="DefaultOrder" type="xs:int" minOccurs="0" msdata:Ordinal="2" />
+                <xs:element name="ErrorCode" type="xs:string" minOccurs="0" msdata:Ordinal="3" />
+                <xs:element name="Message" type="xs:string" msdata:Ordinal="4" />
+                <xs:element name="Project" type="xs:string" minOccurs="0" msdata:Ordinal="5" />
+                <xs:element name="ShortFile" type="xs:string" minOccurs="0" msdata:Ordinal="6" />
+                <xs:element name="Line" type="xs:int" msdata:Ordinal="7" />
+                <xs:element name="FalseAlarm" type="xs:boolean" minOccurs="0" msdata:Ordinal="8" />
+                <xs:element name="File" type="xs:string" msdata:Ordinal="9" />
+                <xs:element name="CodePrev" type="xs:unsignedInt" minOccurs="0" msdata:Ordinal="10" />
+                <xs:element name="CodeCurrent" type="xs:unsignedInt" minOccurs="0" msdata:Ordinal="11" />
+                <xs:element name="CodeNext" type="xs:unsignedInt" minOccurs="0" msdata:Ordinal="12" />
+                <xs:element name="TrialMessage" type="xs:boolean" minOccurs="0" msdata:Ordinal="13" />
+                <xs:element name="Analyzer" type="xs:int" minOccurs="0" msdata:Ordinal="14" />
+                <xs:element name="LineExtension" type="xs:string" minOccurs="0" msdata:Ordinal="15" />
+                <xs:element name="Retired" type="xs:boolean" default="false" minOccurs="0" msdata:Ordinal="16" />
+                <xs:element name="AnalyzedSourceFiles" type="xs:string" minOccurs="0" msdata:Ordinal="17" />
+              </xs:sequence>
+              <xs:attribute name="ErrorCodeNumeric" msdata:ReadOnly="true" msdata:Expression="IIF(LEN(ErrorCode) &lt; 2 OR (SUBSTRING(ErrorCode, 1, 1) &lt;&gt; 'V'), 0, CONVERT(SUBSTRING(ErrorCode, 2, LEN(ErrorCode) - 1), 'System.UInt32'))" type="xs:unsignedInt" use="prohibited" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//PVS-Studio_Analysis_Log" />
+        <xs:field xpath="Line" />
+        <xs:field xpath="Message" />
+        <xs:field xpath="File" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <Solution_Path>
+    <SolutionPath>C:\Users\ekstr\Dropbox\Personal\OpenSource\BluetoothLogin_Exit\BluetoothCredentialProvider\cpp\BlueToothAUTOLogin.sln</SolutionPath>
+    <SolutionVersion>15.0</SolutionVersion>
+    <PlogVersion>4</PlogVersion>
+    <ModificationDate>2017-09-26T04:47:05.6227675Z</ModificationDate>
+  </Solution_Path>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>1</DefaultOrder>
+    <ErrorCode>V519</ErrorCode>
+    <Message>The 'iResult' variable is assigned values twice successively. Perhaps this is a mistake. Check lines: 56, 68.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>ccheckbluetoothdevice.cpp</ShortFile>
+    <Line>68</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\ccheckbluetoothdevice.cpp</File>
+    <CodePrev>12263</CodePrev>
+    <CodeCurrent>2099441063</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <LineExtension>56,68</LineExtension>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>2</DefaultOrder>
+    <ErrorCode>V126</ErrorCode>
+    <Message>Be advised that the size of the type 'long' varies between LLP64/LP64 data models.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>ccheckbluetoothdevice.cpp</ShortFile>
+    <Line>55</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\ccheckbluetoothdevice.cpp</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>46115045</CodeCurrent>
+    <CodeNext>2097376679</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>3</DefaultOrder>
+    <ErrorCode>V126</ErrorCode>
+    <Message>Be advised that the size of the type 'long' varies between LLP64/LP64 data models.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>ccheckbluetoothdevice.cpp</ShortFile>
+    <Line>56</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\ccheckbluetoothdevice.cpp</File>
+    <CodePrev>46115045</CodePrev>
+    <CodeCurrent>2097376679</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>4</DefaultOrder>
+    <ErrorCode>V126</ErrorCode>
+    <Message>Be advised that the size of the type 'long' varies between LLP64/LP64 data models.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>ccheckbluetoothdevice.cpp</ShortFile>
+    <Line>68</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\ccheckbluetoothdevice.cpp</File>
+    <CodePrev>12263</CodePrev>
+    <CodeCurrent>2099441063</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>5</DefaultOrder>
+    <ErrorCode>V004</ErrorCode>
+    <Message>Diagnostics from the 64-bit rule set are not entirely accurate without the appropriate 64-bit compiler. Consider utilizing 64-bit compiler if possible.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile xml:space="preserve"> </ShortFile>
+    <Line>1</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File xml:space="preserve"> </File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>0</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>6</DefaultOrder>
+    <ErrorCode>V126</ErrorCode>
+    <Message>Be advised that the size of the type 'long' varies between LLP64/LP64 data models.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>dll.cpp</ShortFile>
+    <Line>16</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\dll.cpp</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>3057502519</CodeCurrent>
+    <CodeNext>250676174</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>7</DefaultOrder>
+    <ErrorCode>V202</ErrorCode>
+    <Message>Explicit conversion from memsize type to 32-bit integer type.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>dll.cpp</ShortFile>
+    <Line>34</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\dll.cpp</File>
+    <CodePrev>123</CodePrev>
+    <CodeCurrent>161065951</CodeCurrent>
+    <CodeNext>974</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>8</DefaultOrder>
+    <ErrorCode>V221</ErrorCode>
+    <Message>Suspicious sequence of types castings: pointer -&gt; memsize -&gt; 32-bit integer.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>dll.cpp</ShortFile>
+    <Line>34</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\dll.cpp</File>
+    <CodePrev>123</CodePrev>
+    <CodeCurrent>161065951</CodeCurrent>
+    <CodeNext>974</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>9</DefaultOrder>
+    <ErrorCode>V126</ErrorCode>
+    <Message>Be advised that the size of the type 'long' varies between LLP64/LP64 data models.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>dll.cpp</ShortFile>
+    <Line>47</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\dll.cpp</File>
+    <CodePrev>123</CodePrev>
+    <CodeCurrent>224405115</CodeCurrent>
+    <CodeNext>20977</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>10</DefaultOrder>
+    <ErrorCode>V126</ErrorCode>
+    <Message>Be advised that the size of the type 'long' varies between LLP64/LP64 data models.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>dll.cpp</ShortFile>
+    <Line>86</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\dll.cpp</File>
+    <CodePrev>125</CodePrev>
+    <CodeCurrent>38883</CodeCurrent>
+    <CodeNext>193</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>11</DefaultOrder>
+    <ErrorCode>V668</ErrorCode>
+    <Message>There is no sense in testing the 'pcf' pointer against null, as the memory was allocated using the 'new' operator. The exception will be generated in the case of memory allocation error.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>dll.cpp</ShortFile>
+    <Line>98</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\dll.cpp</File>
+    <CodePrev>2463451976</CodePrev>
+    <CodeCurrent>5865</CodeCurrent>
+    <CodeNext>123</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>12</DefaultOrder>
+    <ErrorCode>V202</ErrorCode>
+    <Message>Explicit conversion from memsize type to 32-bit integer type.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csamplecredential.h</ShortFile>
+    <Line>49</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.h</File>
+    <CodePrev>123</CodePrev>
+    <CodeCurrent>4104233559</CodeCurrent>
+    <CodeNext>1028750814</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp*c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.cpp</AnalyzedSourceFiles>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>13</DefaultOrder>
+    <ErrorCode>V221</ErrorCode>
+    <Message>Suspicious sequence of types castings: pointer -&gt; memsize -&gt; 32-bit integer.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csamplecredential.h</ShortFile>
+    <Line>49</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.h</File>
+    <CodePrev>123</CodePrev>
+    <CodeCurrent>4104233559</CodeCurrent>
+    <CodeNext>1028750814</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp*c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.cpp</AnalyzedSourceFiles>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>14</DefaultOrder>
+    <ErrorCode>V202</ErrorCode>
+    <Message>Explicit conversion from memsize type to 32-bit integer type.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csamplecredential.h</ShortFile>
+    <Line>50</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.h</File>
+    <CodePrev>4104233559</CodePrev>
+    <CodeCurrent>1028750814</CodeCurrent>
+    <CodeNext>380273798</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp*c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.cpp</AnalyzedSourceFiles>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>15</DefaultOrder>
+    <ErrorCode>V221</ErrorCode>
+    <Message>Suspicious sequence of types castings: pointer -&gt; memsize -&gt; 32-bit integer.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csamplecredential.h</ShortFile>
+    <Line>50</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.h</File>
+    <CodePrev>4104233559</CodePrev>
+    <CodeCurrent>1028750814</CodeCurrent>
+    <CodeNext>380273798</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp*c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.cpp</AnalyzedSourceFiles>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>16</DefaultOrder>
+    <ErrorCode>V202</ErrorCode>
+    <Message>Explicit conversion from memsize type to 32-bit integer type.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csamplecredential.h</ShortFile>
+    <Line>51</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.h</File>
+    <CodePrev>1028750814</CodePrev>
+    <CodeCurrent>380273798</CodeCurrent>
+    <CodeNext>974</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp*c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.cpp</AnalyzedSourceFiles>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>17</DefaultOrder>
+    <ErrorCode>V221</ErrorCode>
+    <Message>Suspicious sequence of types castings: pointer -&gt; memsize -&gt; 32-bit integer.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csamplecredential.h</ShortFile>
+    <Line>51</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.h</File>
+    <CodePrev>1028750814</CodePrev>
+    <CodeCurrent>380273798</CodeCurrent>
+    <CodeNext>974</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp*c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.cpp</AnalyzedSourceFiles>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>18</DefaultOrder>
+    <ErrorCode>V122</ErrorCode>
+    <Message>Memsize type is used in the struct/class.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csamplecredential.h</ShortFile>
+    <Line>111</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.h</File>
+    <CodePrev>933754271</CodePrev>
+    <CodeCurrent>2966747759</CodeCurrent>
+    <CodeNext>6519311</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp*c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.cpp</AnalyzedSourceFiles>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>19</DefaultOrder>
+    <ErrorCode>V122</ErrorCode>
+    <Message>Memsize type is used in the struct/class.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csamplecredential.h</ShortFile>
+    <Line>112</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.h</File>
+    <CodePrev>2966747759</CodePrev>
+    <CodeCurrent>6519311</CodeCurrent>
+    <CodeNext>2873534028</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp*c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.cpp</AnalyzedSourceFiles>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>20</DefaultOrder>
+    <ErrorCode>V122</ErrorCode>
+    <Message>Memsize type is used in the struct/class.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csamplecredential.h</ShortFile>
+    <Line>113</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.h</File>
+    <CodePrev>6519311</CodePrev>
+    <CodeCurrent>2873534028</CodeCurrent>
+    <CodeNext>2370429034</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp*c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.cpp</AnalyzedSourceFiles>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>21</DefaultOrder>
+    <ErrorCode>V122</ErrorCode>
+    <Message>Memsize type is used in the struct/class.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csamplecredential.h</ShortFile>
+    <Line>114</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.h</File>
+    <CodePrev>2873534028</CodePrev>
+    <CodeCurrent>2370429034</CodeCurrent>
+    <CodeNext>608957336</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp*c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.cpp</AnalyzedSourceFiles>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>22</DefaultOrder>
+    <ErrorCode>V126</ErrorCode>
+    <Message>Be advised that the size of the type 'long' varies between LLP64/LP64 data models.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csamplecredential.h</ShortFile>
+    <Line>37</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.h</File>
+    <CodePrev>123</CodePrev>
+    <CodeCurrent>4798179</CodeCurrent>
+    <CodeNext>20977</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp*c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.cpp</AnalyzedSourceFiles>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>23</DefaultOrder>
+    <ErrorCode>V126</ErrorCode>
+    <Message>Be advised that the size of the type 'long' varies between LLP64/LP64 data models.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csamplecredential.h</ShortFile>
+    <Line>107</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.h</File>
+    <CodePrev>2943490971</CodePrev>
+    <CodeCurrent>38883</CodeCurrent>
+    <CodeNext>4088713257</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp*c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.cpp</AnalyzedSourceFiles>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>24</DefaultOrder>
+    <ErrorCode>V202</ErrorCode>
+    <Message>Explicit conversion from memsize type to 32-bit integer type.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csampleprovider.h</ShortFile>
+    <Line>41</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.h</File>
+    <CodePrev>123</CodePrev>
+    <CodeCurrent>2485114648</CodeCurrent>
+    <CodeNext>3437599224</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp</AnalyzedSourceFiles>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>25</DefaultOrder>
+    <ErrorCode>V221</ErrorCode>
+    <Message>Suspicious sequence of types castings: pointer -&gt; memsize -&gt; 32-bit integer.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csampleprovider.h</ShortFile>
+    <Line>41</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.h</File>
+    <CodePrev>123</CodePrev>
+    <CodeCurrent>2485114648</CodeCurrent>
+    <CodeNext>3437599224</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp</AnalyzedSourceFiles>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>26</DefaultOrder>
+    <ErrorCode>V202</ErrorCode>
+    <Message>Explicit conversion from memsize type to 32-bit integer type.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csampleprovider.h</ShortFile>
+    <Line>42</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.h</File>
+    <CodePrev>2485114648</CodePrev>
+    <CodeCurrent>3437599224</CodeCurrent>
+    <CodeNext>974</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp</AnalyzedSourceFiles>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>27</DefaultOrder>
+    <ErrorCode>V221</ErrorCode>
+    <Message>Suspicious sequence of types castings: pointer -&gt; memsize -&gt; 32-bit integer.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csampleprovider.h</ShortFile>
+    <Line>42</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.h</File>
+    <CodePrev>2485114648</CodePrev>
+    <CodeCurrent>3437599224</CodeCurrent>
+    <CodeNext>974</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp</AnalyzedSourceFiles>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>28</DefaultOrder>
+    <ErrorCode>V122</ErrorCode>
+    <Message>Memsize type is used in the struct/class.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csampleprovider.h</ShortFile>
+    <Line>80</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.h</File>
+    <CodePrev>2268144623</CodePrev>
+    <CodeCurrent>3996775147</CodeCurrent>
+    <CodeNext>1149255507</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp</AnalyzedSourceFiles>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>29</DefaultOrder>
+    <ErrorCode>V122</ErrorCode>
+    <Message>Memsize type is used in the struct/class.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csampleprovider.h</ShortFile>
+    <Line>83</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.h</File>
+    <CodePrev>384422454</CodePrev>
+    <CodeCurrent>4114883495</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp</AnalyzedSourceFiles>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>30</DefaultOrder>
+    <ErrorCode>V126</ErrorCode>
+    <Message>Be advised that the size of the type 'long' varies between LLP64/LP64 data models.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csampleprovider.h</ShortFile>
+    <Line>29</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.h</File>
+    <CodePrev>123</CodePrev>
+    <CodeCurrent>4798179</CodeCurrent>
+    <CodeNext>20977</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp</AnalyzedSourceFiles>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>31</DefaultOrder>
+    <ErrorCode>V126</ErrorCode>
+    <Message>Be advised that the size of the type 'long' varies between LLP64/LP64 data models.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csampleprovider.h</ShortFile>
+    <Line>79</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.h</File>
+    <CodePrev>11496</CodePrev>
+    <CodeCurrent>2268144623</CodeCurrent>
+    <CodeNext>3996775147</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp</AnalyzedSourceFiles>
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>32</DefaultOrder>
+    <ErrorCode>V595</ErrorCode>
+    <Message>The 'ppcpfd' pointer was utilized before it was verified against nullptr. Check lines: 135, 138.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csampleprovider.cpp</ShortFile>
+    <Line>135</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp</File>
+    <CodePrev>63999</CodePrev>
+    <CodeCurrent>261775</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <LineExtension>135,138</LineExtension>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>33</DefaultOrder>
+    <ErrorCode>V595</ErrorCode>
+    <Message>The 'ppcpc' pointer was utilized before it was verified against nullptr. Check lines: 184, 186.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csampleprovider.cpp</ShortFile>
+    <Line>184</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp</File>
+    <CodePrev>523787029</CodePrev>
+    <CodeCurrent>98447</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <LineExtension>184,186</LineExtension>
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>34</DefaultOrder>
+    <ErrorCode>V730</ErrorCode>
+    <Message>Not all members of a class are initialized inside the constructor. Consider inspecting: _fRecreateEnumeratedCredentials, _cpus.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csampleprovider.cpp</ShortFile>
+    <Line>19</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csampleprovider.cpp</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>2546780705</CodeCurrent>
+    <CodeNext>28986</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>35</DefaultOrder>
+    <ErrorCode>V104</ErrorCode>
+    <Message>Implicit conversion of 'i' to memsize type in an arithmetic expression: i &lt; toEncrypt.size()</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>encryptdecrypt.cpp</ShortFile>
+    <Line>9</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\encryptdecrypt.cpp</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>2348624146</CodeCurrent>
+    <CodeNext>1922034459</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>36</DefaultOrder>
+    <ErrorCode>V108</ErrorCode>
+    <Message>Incorrect index type: output[not a memsize-type]. Use memsize type instead.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>encryptdecrypt.cpp</ShortFile>
+    <Line>10</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\encryptdecrypt.cpp</File>
+    <CodePrev>2348624146</CodePrev>
+    <CodeCurrent>1922034459</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>37</DefaultOrder>
+    <ErrorCode>V108</ErrorCode>
+    <Message>Incorrect index type: toEncrypt[not a memsize-type]. Use memsize type instead.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>encryptdecrypt.cpp</ShortFile>
+    <Line>10</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\encryptdecrypt.cpp</File>
+    <CodePrev>2348624146</CodePrev>
+    <CodeCurrent>1922034459</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>38</DefaultOrder>
+    <ErrorCode>V104</ErrorCode>
+    <Message>Implicit conversion of 'i' to memsize type in an arithmetic expression: i % (sizeof (key) / sizeof (char))</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>encryptdecrypt.cpp</ShortFile>
+    <Line>10</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\encryptdecrypt.cpp</File>
+    <CodePrev>2348624146</CodePrev>
+    <CodeCurrent>1922034459</CodeCurrent>
+    <CodeNext>0</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>39</DefaultOrder>
+    <ErrorCode>V813</ErrorCode>
+    <Message>Decreased performance. The 'toEncrypt' argument should probably be rendered as a constant reference.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>encryptdecrypt.cpp</ShortFile>
+    <Line>5</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\encryptdecrypt.cpp</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>3318488294</CodeCurrent>
+    <CodeNext>789397938</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>5</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>40</DefaultOrder>
+    <ErrorCode>V106</ErrorCode>
+    <Message>Implicit type conversion first argument 'pcpcs-&gt;cbSerialization' of function 'CoTaskMemAlloc' to memsize type.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csamplecredential.cpp</ShortFile>
+    <Line>607</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.cpp</File>
+    <CodePrev>123</CodePrev>
+    <CodeCurrent>3025312147</CodeCurrent>
+    <CodeNext>4010987082</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>41</DefaultOrder>
+    <ErrorCode>V122</ErrorCode>
+    <Message>Memsize type is used in the struct/class.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csamplecredential.cpp</ShortFile>
+    <Line>656</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.cpp</File>
+    <CodePrev>131356921</CodePrev>
+    <CodeCurrent>3215605</CodeCurrent>
+    <CodeNext>4050505655</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>1</Level>
+    <DefaultOrder>42</DefaultOrder>
+    <ErrorCode>V730</ErrorCode>
+    <Message>Not all members of a class are initialized inside the constructor. Consider inspecting: _cpus.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>csamplecredential.cpp</ShortFile>
+    <Line>23</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\csamplecredential.cpp</File>
+    <CodePrev>0</CodePrev>
+    <CodeCurrent>3719431432</CodeCurrent>
+    <CodeNext>28986</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>4</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>43</DefaultOrder>
+    <ErrorCode>V202</ErrorCode>
+    <Message>Explicit conversion from memsize type to 32-bit integer type: (DWORD) wcslen(pwzToProtectCopy)</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>helpers.cpp</ShortFile>
+    <Line>406</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\helpers.cpp</File>
+    <CodePrev>58975007</CodePrev>
+    <CodeCurrent>2403743398</CodeCurrent>
+    <CodeNext>123</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>44</DefaultOrder>
+    <ErrorCode>V104</ErrorCode>
+    <Message>Implicit conversion of 'cchProtected' to memsize type in an arithmetic expression: cchProtected * sizeof (wchar_t)</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>helpers.cpp</ShortFile>
+    <Line>413</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\helpers.cpp</File>
+    <CodePrev>1782841748</CodePrev>
+    <CodeCurrent>2081178455</CodeCurrent>
+    <CodeNext>2990277</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>3</Level>
+    <DefaultOrder>45</DefaultOrder>
+    <ErrorCode>V202</ErrorCode>
+    <Message>Explicit conversion from memsize type to 32-bit integer type: (DWORD) wcslen(pwzToProtectCopy)</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>helpers.cpp</ShortFile>
+    <Line>417</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\helpers.cpp</File>
+    <CodePrev>1378716564</CodePrev>
+    <CodeCurrent>662730059</CodeCurrent>
+    <CodeNext>123</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>46</DefaultOrder>
+    <ErrorCode>V104</ErrorCode>
+    <Message>Implicit conversion of 'cb' to memsize type in an arithmetic expression.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>helpers.cpp</ShortFile>
+    <Line>528</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\helpers.cpp</File>
+    <CodePrev>886308834</CodePrev>
+    <CodeCurrent>1733528686</CodeCurrent>
+    <CodeNext>2587984172</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>47</DefaultOrder>
+    <ErrorCode>V104</ErrorCode>
+    <Message>Implicit conversion of 'cb' to memsize type in an arithmetic expression.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>helpers.cpp</ShortFile>
+    <Line>529</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\helpers.cpp</File>
+    <CodePrev>1733528686</CodePrev>
+    <CodeCurrent>2587984172</CodeCurrent>
+    <CodeNext>482655370</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>48</DefaultOrder>
+    <ErrorCode>V104</ErrorCode>
+    <Message>Implicit conversion of 'cb' to memsize type in an arithmetic expression.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>helpers.cpp</ShortFile>
+    <Line>530</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\helpers.cpp</File>
+    <CodePrev>2587984172</CodePrev>
+    <CodeCurrent>482655370</CodeCurrent>
+    <CodeNext>123</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>49</DefaultOrder>
+    <ErrorCode>V104</ErrorCode>
+    <Message>Implicit conversion of 'cchDomainUsername' to memsize type in an arithmetic expression: cchDomainUsername * sizeof (wchar_t)</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>helpers.cpp</ShortFile>
+    <Line>571</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\helpers.cpp</File>
+    <CodePrev>123</CodePrev>
+    <CodeCurrent>3987241904</CodeCurrent>
+    <CodeNext>95829823</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>50</DefaultOrder>
+    <ErrorCode>V104</ErrorCode>
+    <Message>Implicit conversion of 'cchPassword' to memsize type in an arithmetic expression: cchPassword * sizeof (wchar_t)</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>helpers.cpp</ShortFile>
+    <Line>574</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\helpers.cpp</File>
+    <CodePrev>123</CodePrev>
+    <CodeCurrent>2019977404</CodeCurrent>
+    <CodeNext>1494785</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>51</DefaultOrder>
+    <ErrorCode>V106</ErrorCode>
+    <Message>Implicit type conversion second argument '* pcbNative' of function 'LocalAlloc' to memsize type.</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>helpers.cpp</ShortFile>
+    <Line>596</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\helpers.cpp</File>
+    <CodePrev>123</CodePrev>
+    <CodeCurrent>2726491284</CodeCurrent>
+    <CodeNext>1325203</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+  <PVS-Studio_Analysis_Log>
+    <FavIcon>false</FavIcon>
+    <Level>2</Level>
+    <DefaultOrder>52</DefaultOrder>
+    <ErrorCode>V104</ErrorCode>
+    <Message>Implicit conversion of 'cchPassword' to memsize type in an arithmetic expression: cchPassword * sizeof (wchar_t)</Message>
+    <Project>BlueToothAUTOLogin</Project>
+    <ShortFile>helpers.cpp</ShortFile>
+    <Line>614</Line>
+    <FalseAlarm>false</FalseAlarm>
+    <File>c:\users\ekstr\dropbox\personal\opensource\bluetoothlogin_exit\bluetoothcredentialprovider\cpp\helpers.cpp</File>
+    <CodePrev>123</CodePrev>
+    <CodeCurrent>41780345</CodeCurrent>
+    <CodeNext>448618041</CodeNext>
+    <TrialMessage>false</TrialMessage>
+    <Analyzer>1</Analyzer>
+    <LineExtension />
+    <Retired>false</Retired>
+    <AnalyzedSourceFiles />
+  </PVS-Studio_Analysis_Log>
+</NewDataSet>
